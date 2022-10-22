@@ -5,8 +5,8 @@ import pandas  as pd; import pickle
 
 st.title('Plastic hinge length of reinforced concrete structural walls (RCSWs) ')
 with st.container():
-    image1 = Image.open('Capture1.png')
-    image2 = Image.open('Capture2.png')
+    image1 = Image.open('./Capture1.png')
+    image2 = Image.open('./Capture2.png')
 
     st.image(image1)
     st.image(image2)
@@ -20,7 +20,7 @@ WL2 = WL1*1000.0; HE2 = HE1*1000.0;
 inputvec = np.array([SCR1, WL2, HE2, ALR1, SSP1])
 
 
-filename = 'finalized_model.sav'
+filename = './finalized_model.sav'
 ### save the model to disk
 # pickle.dump(model, open(filename, 'wb'))
  
@@ -50,8 +50,8 @@ with st.container():
 
 st.header("Developers:")
 with st.container():
-    image3 = Image.open('Capture3.png')
-    image4 = Image.open('Capture4.png')
+    image3 = Image.open('./Capture3.png')
+    image4 = Image.open('./Capture4.png')
 
     st.image(image3)
     st.image(image4)
