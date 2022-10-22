@@ -4,11 +4,15 @@ import pandas  as pd; import pickle
 
 import os
 
+dirname = os.path.dirname(__file__)
+filename1 = os.path.join(dirname, 'Capture1.png')
+filename2 = os.path.join(dirname, 'Capture2.png')
+
 
 st.title('Plastic hinge length of reinforced concrete structural walls (RCSWs) ')
 with st.container():
-    image1 = Image.open('https://github.com/msbearthquake/Plastichingelengthwalls1/blob/main/Capture1.PNG')
-    image2 = Image.open('https://github.com/msbearthquake/Plastichingelengthwalls1/blob/main/Capture2.PNG')
+    image1 = Image.open(filename1)
+    image2 = Image.open(filename2)
 
     st.image(image1)
     st.image(image2)
@@ -22,7 +26,7 @@ WL2 = WL1*1000.0; HE2 = HE1*1000.0;
 inputvec = np.array([SCR1, WL2, HE2, ALR1, SSP1])
 
 
-filename3 ='https://github.com/msbearthquake/Plastichingelengthwalls1/blob/main/finalized_model.sav'
+filename3 = os.path.join(dirname, 'finalized_model.sav')
 ### save the model to disk
 # pickle.dump(model, open(filename, 'wb'))
  
@@ -50,10 +54,12 @@ with st.container():
 
 # st.write(trainx)
 
+filename4 = os.path.join(dirname, 'Capture3.png')
+filename5 = os.path.join(dirname, 'Capture4.png')
 st.header("Developers:")
 with st.container():
-    image3 = Image.open('https://github.com/msbearthquake/Plastichingelengthwalls1/blob/main/Capture3.PNG')
-    image4 = Image.open('https://github.com/msbearthquake/Plastichingelengthwalls1/blob/main/Capture4.PNG')
+    image3 = Image.open(filename4)
+    image4 = Image.open(filename5)
 
     st.image(image3)
     st.image(image4)
