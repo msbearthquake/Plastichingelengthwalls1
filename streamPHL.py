@@ -31,19 +31,20 @@ filename = 'finalized_model.sav'
 with st.container():
 
     if st.button('Run'):
+        if WL2!=0 and HE2!=0:
+            loaded_model = pickle.load(open(filename, 'rb'))
 
-        loaded_model = pickle.load(open(filename, 'rb'))
-
-        # trainx1 = pd.read_excel('./trainx.xlsx')
-        # trainy1 = pd.read_excel('./trainy.xlsx')
-        # trainy = trainy1['PHL']
-        # trainx = trainx1.iloc[:,6:11]
-        # model = RandomForestRegressor (n_estimators  = 180  , max_features= 5, max_depth= 12, min_samples_split = 2, min_samples_leaf = 1 )
-        # model.fit(trainx, trainy)
-        # yhat1 = model.predict(inputvec.reshape(1, -1))
-        yhat1 = loaded_model.predict(inputvec.reshape(1, -1))
-        st.write("Plastic hinge length is: " , round(yhat1[0]/1000.0, 4), "m")
-
+            # trainx1 = pd.read_excel('./trainx.xlsx')
+            # trainy1 = pd.read_excel('./trainy.xlsx')
+            # trainy = trainy1['PHL']
+            # trainx = trainx1.iloc[:,6:11]
+            # model = RandomForestRegressor (n_estimators  = 180  , max_features= 5, max_depth= 12, min_samples_split = 2, min_samples_leaf = 1 )
+            # model.fit(trainx, trainy)
+            # yhat1 = model.predict(inputvec.reshape(1, -1))
+            yhat1 = loaded_model.predict(inputvec.reshape(1, -1))
+            st.write("Plastic hinge length is: " , round(yhat1[0]/1000.0, 4), "m")
+        else:
+            st.write("Secondary cracking ratio, wall length and wall effective height should not be zero.")
 
 # st.write(trainx)
 
