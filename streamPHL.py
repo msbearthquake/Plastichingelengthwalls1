@@ -10,11 +10,11 @@ filename2 = 'https://github.com/msbearthquake/Plastichingelengthwalls1/blob/main
 
 st.title('Plastic hinge length of reinforced concrete structural walls (RCSWs) ')
 with st.container():
-    image1 = Image.open(filename1)
-    image2 = Image.open(filename2)
+    # image1 = Image.open(filename1)
+    # image2 = Image.open(filename2)
 
-    st.image(image1)
-    st.image(image2)
+    st.image(filename1)
+    st.image(filename2)
 
 SCR1 = st.number_input('Insert secondary cracking ratio:',0.0)
 WL1 = st.number_input('Insert wall length (m):',0.0)
@@ -57,8 +57,8 @@ filename4 = 'https://github.com/msbearthquake/Plastichingelengthwalls1/blob/main
 filename5 = 'https://github.com/msbearthquake/Plastichingelengthwalls1/blob/main/Capture4.PNG'
 st.header("Developers:")
 with st.container():
-    image3 = Image.open(filename4)
-    image4 = Image.open(filename5)
+    # image3 = Image.open(filename4)
+    # image4 = Image.open(filename5)
 
-    st.image(image3)
-    st.image(image4)
+    st.image(filename4)
+    st.image(filename5)
