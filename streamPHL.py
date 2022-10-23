@@ -4,9 +4,8 @@ import pandas  as pd; import pickle
 
 import os
 
-filename1 = 'https://github.com/msbearthquake/Plastichingelengthwalls1/blob/main/Capture1.PNG'
-filename2 = 'https://github.com/msbearthquake/Plastichingelengthwalls1/blob/main/Capture12.PNG'
-
+filename1 = 'https://raw.githubusercontent.com/msbearthquake/Plastichingelengthwalls1/main/Capture1.PNG'
+filename2 = 'https://raw.githubusercontent.com/msbearthquake/Plastichingelengthwalls1/main/Capture2.PNG'
 
 st.title('Plastic hinge length of reinforced concrete structural walls (RCSWs) ')
 with st.container():
@@ -53,8 +52,8 @@ with st.container():
 
 # st.write(trainx)
 
-filename4 = 'https://github.com/msbearthquake/Plastichingelengthwalls1/blob/main/Capture3.PNG'
-filename5 = 'https://github.com/msbearthquake/Plastichingelengthwalls1/blob/main/Capture4.PNG'
+filename4 = 'https://raw.githubusercontent.com/msbearthquake/Plastichingelengthwalls1/main/Capture3.PNG'
+filename5 = 'https://raw.githubusercontent.com/msbearthquake/Plastichingelengthwalls1/main/Capture4.PNG'
 st.header("Developers:")
 with st.container():
     # image3 = Image.open(filename4)
