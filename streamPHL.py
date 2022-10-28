@@ -54,10 +54,20 @@ with st.container():
 
 filename4 = 'https://raw.githubusercontent.com/msbearthquake/Plastichingelengthwalls1/main/Capture3.PNG'
 filename5 = 'https://raw.githubusercontent.com/msbearthquake/Plastichingelengthwalls1/main/Capture4.PNG'
-st.header("Developers:")
+
+
 with st.container():
+    st.header("Developers:")
     # image3 = Image.open(filename4)
     # image4 = Image.open(filename5)
 
     st.image(filename4)
+ 
+
+
+with st.container():
+    st.header("Supervisor:")
+    # image3 = Image.open(filename4)
+    # image4 = Image.open(filename5)
+
     st.image(filename5)
