@@ -61,7 +61,7 @@ with st.container():
     # image3 = Image.open(filename4)
     # image4 = Image.open(filename5)
 
-    st.image(filename4)
+    st.image(filename5)
  
 
 
@@ -70,4 +70,4 @@ with st.container():
     # image3 = Image.open(filename4)
     # image4 = Image.open(filename5)
 
-    st.image(filename5)
+    st.image(filename4)
