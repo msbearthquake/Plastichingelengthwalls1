@@ -57,7 +57,7 @@ filename5 = 'https://raw.githubusercontent.com/msbearthquake/Plastichingelengthw
 
 
 with st.container():
-    st.header("Developers:")
+    st.header("Developer:")
     # image3 = Image.open(filename4)
     # image4 = Image.open(filename5)
 
